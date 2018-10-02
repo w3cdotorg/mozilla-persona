@@ -88,7 +88,7 @@ runner.run(module, {
       // If it fails, we'll want to know which test(s) failed.
       var filename = process.env.FRONTENDQUNIT ||
         'frontend-' + new Date().toISOString().split('T')[0] + '.log';
-      filename = path.join(os.tmpDir(), filename);
+      filename = path.join(os.tmpdir(), filename);
       fs.appendFileSync(filename, JSON.stringify(res) + '\n');
       done(assert.equal(res.result.failed, '0'));
     };

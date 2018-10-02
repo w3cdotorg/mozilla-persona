@@ -346,7 +346,7 @@ function processRows(err, rows) {
 }
 
 function queryDatabaseB2G() {
-  args.dbfile = path.join(os.tmpDir(), WEBAPPSSTORE_SQLITE);
+  args.dbfile = path.join(os.tmpdir(), WEBAPPSSTORE_SQLITE);
   adbPullWebappsstore(args.dbfile, function(err) {
     if (err) {
       console.error('*** ERROR: Pulling from b2g: ', err.message || err);

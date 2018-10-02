@@ -125,7 +125,7 @@ function runDaemon(daemon, cb) {
     args.unshift('--debug=' + debugPort++);
   } else if (process.env.PERSONA_WITH_COVER) {
     var pathToCover = path.join(__dirname, "..", "node_modules", ".bin", "cover");
-    if (path.existsSync(pathToCover)) {
+    if (fs.existsSync(pathToCover)) {
       args.unshift(pathToCover, 'run');
     }
   }

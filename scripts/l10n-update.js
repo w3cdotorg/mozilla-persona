@@ -19,7 +19,7 @@ const mkdirp         = require('mkdirp'),
       path           = require('path'),
       child_process  = require('child_process');
 
-const existsSync = fs.existsSync || path.existsSync;
+const existsSync = fs.existsSync;
 
 const svnRepo =
         'https://svn.mozilla.org/projects/l10n-misc/trunk/browserid/locale/';

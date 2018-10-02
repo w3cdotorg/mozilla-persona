@@ -36,7 +36,7 @@ if (!process.env['SERVER_URL']) {
 if (typeof fs.existsSync === 'function') {
   var existsSync = fs.existsSync;
 } else {
-  var existsSync = path.existsSync;
+  var existsSync = fs.existsSync;
 }
 
 // now parse out host, port and scheme

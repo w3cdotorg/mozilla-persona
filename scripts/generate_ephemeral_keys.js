@@ -5,7 +5,7 @@
 var fs = require('fs');
 var path = require('path');
 var child_process = require('child_process');
-var existsSync = fs.existsSync || path.existsSync;
+var existsSync = fs.existsSync;
 
 var VAR = path.join(__dirname, '../var');
 var CERT = path.join(VAR, 'root.cert');

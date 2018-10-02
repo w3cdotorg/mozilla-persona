@@ -16,7 +16,7 @@ cachify.setup({}, {
   root: path.join(__dirname, '../resources/static')
 });
 
-var existsSync = fs.existsSync || path.existsSync;
+var existsSync = fs.existsSync;
 var dir = process.env.TEMPLATE_DIR || process.cwd();
 var output_dir = process.env.BUILD_DIR || dir;
 var outputFile = path.join(output_dir, "templates.js");
